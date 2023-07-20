@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<HTML>
+
+<head>
+        <title>DOM Basic</title>
+        <script>
+            window.onload = function(){
+            var header = document.getElementById('header');
+
+            header.style.color = 'orange';
+            header.style.background = 'red';
+            header.innerHTML = 'From JavaScript';
+            };
+        </script>
+</head>
+<body>       
+    <h1 id = "header">Header</h1>
+
+</body>
+</HTML> -->
+<!--getElemntById() 메서드이용하여 문서 객체 1개 선택하기-->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Basic</title>
+    <script>
+        // 이벤트를 연결합니다.
+        window.onload = function () {
+            // 문서 객체를 선택합니다.
+            var header = document.querySelector('h1');
+
+            // 문서 객체를 조작합니다.
+            header.style.color = 'orange';
+            header.style.background = 'red';
+            header.innerHTML = 'From JavaScript';
+        };
+    </script>
+</head>
+<body>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Basic</title>
+    <script>
+        // 이벤트를 연결합니다.
+        window.onload = function () {
+            // 문서 객체를 선택합니다.
+            var headers = document.querySelectorAll('h1');
+
+            for (var i = 0; i < headers.length; i++) {
+                // 변수를 선언합니다.
+                var header = headers[i];
+
+                // 문서 객체를 조작합니다.
+                header.style.color = 'orange';
+                header.style.background = 'red';
+                header.innerHTML = 'From JavaScript';
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+</body>
+</html>
